@@ -46,14 +46,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="fmPart2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="fmPart2.Designer.cs">
+      <DependentUpon>fmPart2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmPart1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmPart1.Designer.cs">
+      <DependentUpon>fmPart1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="fmPart3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmPart3.Designer.cs">
+      <DependentUpon>fmPart3.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fmPart1.resx">
+      <DependentUpon>fmPart1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmPart2.resx">
+      <DependentUpon>fmPart2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +80,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="fmPart3.resx">
+      <DependentUpon>fmPart3.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +97,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kid_calculate_with_finger_to_solve_math_practice_vector_2153018.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipart-chicken-cycle-19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallhaven-73zg19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plaets.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallhaven-0w655p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallhaven-4yx36x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallhaven-6ql7v6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallhaven-47ywjy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallhaven-gjgz27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallhaven-nrd6vq.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
